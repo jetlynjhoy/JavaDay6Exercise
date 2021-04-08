@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #bf1717;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox alignment="TOP_RIGHT" layoutX="56.0" layoutY="90.0" prefHeight="220.0" prefWidth="200.0">
+         <children>
+            <Label text="ID" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="7.5" />
+               </VBox.margin>
+            </Label>
+            <Label text="First Name" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="7.5" />
+               </VBox.margin>
+            </Label>
+            <Label text="Middle Initial" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="7.5" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER_RIGHT" text="Last Name" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="7.5" />
+               </VBox.margin>
+            </Label>
+            <Label text="Phone" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="7.5" />
+               </VBox.margin>
+            </Label>
+            <Label text="Email" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="7.5" />
+               </VBox.margin>
+            </Label>
+            <Label text="Position" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="7.5" />
+               </VBox.margin>
+            </Label>
+            <Label text="Agency ID" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="7.5" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="273.0" layoutY="90.0" prefHeight="220.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="tfAgentId" editable="false" style="-fx-background-color: #f2f2f2;">
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tfAgtFirstName" editable="false" style="-fx-background-color: #f2f2f2;">
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tfAgtMiddleInitial" editable="false" style="-fx-background-color: #f2f2f2;">
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tfAgtLastName" editable="false" style="-fx-background-color: #f2f2f2;">
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tfAgtBusPhone" editable="false" style="-fx-background-color: #f2f2f2;">
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tfAgtEmail" editable="false" style="-fx-background-color: #f2f2f2;">
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tfAgtPosition" editable="false" style="-fx-background-color: #f2f2f2;">
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tfAgencyId" editable="false" style="-fx-background-color: #f2f2f2;">
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </VBox>
+      <ComboBox fx:id="cbAgents" layoutX="242.0" layoutY="34.0" prefWidth="150.0" promptText="Select an agent">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></ComboBox>
+      <Button fx:id="btnSave" disable="true" layoutX="317.0" layoutY="344.0" mnemonicParsing="false" onAction="#handlebtnSave" prefHeight="28.0" prefWidth="72.0" style="-fx-background-color: #1d7ef5;" text="Save">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEdit" layoutX="184.0" layoutY="344.0" mnemonicParsing="false" onAction="#handlebtnEdit" prefHeight="28.0" prefWidth="71.0" style="-fx-background-color: #1df525;" text="Edit">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
